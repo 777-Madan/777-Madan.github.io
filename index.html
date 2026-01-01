@@ -7,13 +7,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<!-- Smooth scroll + marquee style -->
+		<!-- Smooth scroll -->
 		<style>
 			html {
 				scroll-behavior: smooth;
 			}
 
-			/* Marquee styling */
+			/* Marquee Styles */
 			.marquee {
 				overflow: hidden;
 				white-space: nowrap;
@@ -26,8 +26,8 @@
 
 			.marquee-content {
 				display: inline-flex;
-				gap: 60px; /* Space between items */
-				animation: scroll 5s linear infinite; /* Full scroll in 5 seconds */
+				gap: 60px;
+				animation: scroll 30s linear infinite; /* slower scroll */
 			}
 
 			.marquee-content span {
@@ -37,19 +37,13 @@
 				cursor: default;
 			}
 
-			/* Pause on hover */
 			.marquee:hover .marquee-content {
 				animation-play-state: paused;
 			}
 
-			/* Keyframes for scrolling left to right */
 			@keyframes scroll {
-				0% {
-					transform: translateX(100%);
-				}
-				100% {
-					transform: translateX(-100%);
-				}
+				0% { transform: translateX(100%); }
+				100% { transform: translateX(-100%); }
 			}
 		</style>
 	</head>
