@@ -7,13 +7,34 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<!-- Smooth scroll -->
+		<!-- Smooth scroll + Marquee styles -->
 		<style>
 			html {
 				scroll-behavior: smooth;
 			}
+
+			.marquee-container {
+				background: #f4b400; /* construction yellow */
+				color: #000;
+				overflow: hidden;
+				white-space: nowrap;
+				padding: 10px 0;
+				font-weight: 600;
+			}
+
+			.marquee span {
+				display: inline-block;
+				padding-left: 100%;
+				animation: marquee 18s linear infinite;
+			}
+
+			@keyframes marquee {
+				0% { transform: translateX(0); }
+				100% { transform: translateX(-100%); }
+			}
 		</style>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Page Wrapper -->
@@ -48,75 +69,74 @@
 						<img src="images/logo.jpg" alt="Gorakhnath Suppliers Logo" style="height:60px;">
 					</div>
 					<h2>Gorakhnath Suppliers</h2>
-					<p>Your trusted partner for construction materials, home renovation, and building solutions in your city.</p>
+					<p>Your trusted partner for construction materials, home renovation, and building solutions.</p>
 				</div>
 			</section>
+
+			<!-- Marquee -->
+			<div class="marquee-container">
+				<div class="marquee">
+					<span>
+						Cement • Bricks • Rods • Sand • Tiles • Plumbing • Electrical • Paints • Roofing • Cement • Bricks • Rods • Sand • Tiles • Plumbing • Electrical • Paints • Roofing
+					</span>
+				</div>
+			</div>
 
 			<!-- Wrapper -->
 			<section id="wrapper">
 
 				<!-- One -->
-				<section id="one" class="wrapper spotlight style1">
+				<section class="wrapper spotlight style1">
 					<div class="inner">
-						<a href="#" class="image"><img src="images/pic01.jpg" alt="Residential Construction" /></a>
 						<div class="content">
 							<h2 class="major">Residential Construction</h2>
-							<p>Providing high-quality materials and solutions for building your dream home with precision and reliability.</p>
+							<p>High-quality materials for building strong and reliable homes.</p>
 						</div>
 					</div>
 				</section>
 
 				<!-- Two -->
-				<section id="two" class="wrapper alt spotlight style2">
+				<section class="wrapper alt spotlight style2">
 					<div class="inner">
-						<a href="#" class="image"><img src="images/pic02.jpg" alt="Commercial Construction" /></a>
 						<div class="content">
 							<h2 class="major">Commercial Construction</h2>
-							<p>Supplying durable construction materials for offices, shops, and commercial projects with expert guidance.</p>
+							<p>Durable materials and expert support for commercial projects.</p>
 						</div>
 					</div>
 				</section>
 
 				<!-- Three -->
-				<section id="three" class="wrapper spotlight style3">
+				<section class="wrapper spotlight style3">
 					<div class="inner">
-						<a href="#" class="image"><img src="images/pic03.jpg" alt="Renovation & Repairs" /></a>
 						<div class="content">
 							<h2 class="major">Renovation & Repairs</h2>
-							<p>Helping you upgrade and repair your property using top-quality materials and professional advice.</p>
+							<p>Upgrade and repair your property with trusted materials.</p>
 						</div>
 					</div>
 				</section>
 
-				<!-- Four (Services) -->
+				<!-- Four -->
 				<section id="four" class="wrapper alt style1">
 					<div class="inner">
 						<h2 class="major">Our Services</h2>
-						<p>We provide a wide range of services and materials for construction, renovation, flooring, and more.</p>
+						<p>Construction materials and solutions for every project.</p>
 
 						<section class="features">
 							<article>
-								<a href="#" class="image"><img src="images/pic04.jpg" alt="Flooring & Tiling" /></a>
 								<h3 class="major">Flooring & Tiling</h3>
-								<p>High-quality tiles and flooring solutions.</p>
+								<p>Quality tiles and flooring solutions.</p>
 							</article>
-
 							<article>
-								<a href="#" class="image"><img src="images/pic05.jpg" alt="Plaster & Painting" /></a>
 								<h3 class="major">Plaster & Painting</h3>
-								<p>Professional plastering and painting materials.</p>
+								<p>Professional plaster and paint materials.</p>
 							</article>
-
 							<article>
-								<a href="#" class="image"><img src="images/pic06.jpg" alt="Roofing Solutions" /></a>
 								<h3 class="major">Roofing Solutions</h3>
-								<p>Durable roofing materials and solutions.</p>
+								<p>Strong and weather-resistant roofing materials.</p>
 							</article>
-
 							<article>
-								<a href="#" class="image"><img src="images/pic07.jpg" alt="Custom Projects" /></a>
 								<h3 class="major">Custom Projects</h3>
-								<p>Tailored construction solutions.</p>
+								<p>Tailored solutions for any construction need.</p>
 							</article>
 						</section>
 					</div>
@@ -128,11 +148,11 @@
 			<section id="footer">
 				<div class="inner">
 					<h2 class="major">Get in touch</h2>
-					<p>Contact us for construction materials and expert advice.</p>
+					<p>Contact us for quality construction materials and expert advice.</p>
 
 					<ul class="contact">
 						<li class="icon solid fa-home">
-							Gorakhnath Suppliers<br />
+							Gorakhnath Suppliers<br>
 							Banasthali, Chamati
 						</li>
 						<li class="icon solid fa-phone">
@@ -143,7 +163,7 @@
 						</li>
 						<li class="icon brands fa-facebook-f">
 							<a href="https://www.facebook.com/profile.php?id=61551545083628" target="_blank">
-								facebook.com/gorakhnathsuppliers
+								Facebook Page
 							</a>
 						</li>
 					</ul>
